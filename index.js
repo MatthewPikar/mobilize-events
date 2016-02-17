@@ -15,10 +15,12 @@ _.extend(options, {
     resourceName: 'events',
     resourceFormat: {
         required$: ['sourceId','name'],
-        only$: ['id','sourceId','name','date','duration','location','description'],
+        only$: ['id','sourceId','name','created','modified','date','duration','location','description'],
         id: 'string$',
         sourceId: 'string$',
         name: 'string$',
+        created: 'string$',
+        modified: 'string$',
         date: 'string$',
         duration: 'integer$',
         location: 'string$',
